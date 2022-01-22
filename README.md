@@ -30,7 +30,7 @@
 |[undefined.ts](./basic/undefined.ts)|undefined 타입 예시|
 |[useModule.ts](./basic/useModule.ts)|모듈 import 예시|
 
-## Lambda 라이브러리 사용법
+## Ramda 라이브러리 사용법
 
 |file|description|
 |:---:|:---:|
