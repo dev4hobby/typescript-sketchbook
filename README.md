@@ -32,6 +32,13 @@
 
 ## Ramda 라이브러리 사용법
 
+> <https://ramdajs.com/docs/>
+> <https://devdocs.io/ramda/>
+
 |file|description|
 |:---:|:---:|
-|||
+|[array.ts](./ramda/array.ts)|배열 사용예시|
+|[calc.ts](./ramda/calc.ts)|사칙연산 예시|
+|[curry.ts](./ramda/curry.ts)|커리 사용예시|
+|[predicate.ts](./ramda/predicate.ts)|서술자 및 조건연산 예시|
+|[string.ts](./ramda/string.ts)|문자열 관련 예시|
