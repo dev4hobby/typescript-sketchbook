@@ -31,5 +31,4 @@ node_modules/
 ### dist ###
 # Build artifacts
 dist/
-basic/*.js
-ramda/*.js
+**/**.js
