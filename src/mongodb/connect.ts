@@ -1,5 +1,6 @@
+import "../env"
 import { MongoClient } from "mongodb";
-export const mongoUri = "mongodb+srv://ts-sketch:IYaRwnWNwtU3pihC@cluster0.xclq8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+export const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}`
 
 const mongoOptions = {
   useNewUrlParser: true,
