@@ -1,6 +1,5 @@
-import { ISetoid, IApply } from "../interfaces"
-
-export class Identity<T> implements ISetoid<T>, IApply<T> {
+import { IMonad, ISetoid } from "../interfaces"
+export class Identity<T> implements ISetoid<T>, IMonad<T> {
   private _value: T;
   constructor(value: T) {
     this._value = value;
@@ -31,4 +30,11 @@ export class Identity<T> implements ISetoid<T>, IApply<T> {
     return new Identity(f)
   }
 
+  static of<T> (value: T): Identity<T> {
+    return new Identity<T>(value)
+  }
+
+  chain<U>(func: (T) => U): U {
+    return func(this.value())
+  }
 }
