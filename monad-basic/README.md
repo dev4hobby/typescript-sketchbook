@@ -57,3 +57,12 @@
 > Just와 다르게 코드를 완벽하게 실행시키지 않는 목적의 모나드입니다.
 
 Work in progress..
+
+
+### Validation
+
+데이터가 유효한지 확인하는 것을 위한 모나드입니다.  
+판타지랜드의 Apply 규격에 의존하여 동작함.  
+Maybe와 비슷하게 Success, Failure 두 가지 모나드로 구성됩니다.  
+> Identity 모나드의 ap 메서드 방식으로 동작합니다.  
+> ap 메서드를 사용할 때는 Identity 모나드의 value가 함수여야 합니다.  
